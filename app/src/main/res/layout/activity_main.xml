@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/viewContainer"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:elevation="10dp"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/unnamed"
+            android:layout_gravity="center"
+            android:layout_centerInParent="true" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/textContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        android:layout_marginTop="20dp"
+        android:visibility="invisible"
+        android:layout_below="@+id/viewContainer">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo_white"
+            android:text="Welcome"
+            android:textStyle="italic"
+            android:textColor="@color/colorWhite"
+            android:textSize="25sp"
+            android:layout_gravity="center"
+            android:layout_centerInParent="true" />
+    </FrameLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorRed"
+        android:visibility="invisible"
+        >
+    </RelativeLayout>
+
+
+</RelativeLayout>
